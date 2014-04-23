@@ -1,5 +1,6 @@
 PXML TPL
 ==========
+<img src="http://placehold.it/500/146/fff/&text=PXML" /> <br />
 A smart tiny and lightest OO php templating system . <br />
 Only it replaces some words with others ( uses "str_ireplace()" ) . <br />
 - No regex . <br />
