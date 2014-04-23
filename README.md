@@ -15,7 +15,7 @@ Usage
 =========
 
 **Config it:**
-```
+```php
 <?php
 
 // load it
@@ -33,11 +33,10 @@ $pxml->add(array(
 // render a file (and pass vars "optional")
 $pxml->render('path/to/file.html', array('var' => 'value'));
 
-?>
 ```
 
 **An PHTML file**
-```
+```php
     <h1> <print>$c</print> </h1>
     <php> $this->alert = 'hi' </php>
     <print> $this->alert </print>
