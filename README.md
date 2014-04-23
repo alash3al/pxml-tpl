@@ -1,11 +1,11 @@
-PHTML TPL
+PXML TPL
 ==========
 A smart tiny and lightest OO php templating system . <br />
 Only it replaces some words with others ( uses "str_ireplace()" ) . <br />
 - No regex . <br />
 - No complex code . <br />
 - Very light (the lightest) . <br />
-- Write php as html . <br />
+- Write php as xml/html . <br />
 - Self Container for ( vars & methods ) . <br />
 - Object Oriented . <br />
 
@@ -15,37 +15,29 @@ Usage
 =========
 
 **Config it:**
-```php
+```
 <?php
 
 // load it
-require_once 'path/tp/phtml.php';
+require_once 'path/tp/pxml.php';
 
 // start it
-$phtml = new phtml;
+$pxml = new pxml;
 
 // ad your own replacements ?
-$phtml->add(array(
+$pxml->add(array(
     '(php):'    =>  ' <?php ',
     ':(php)'    =>  ' ?> '
 ));
 
 // render a file (and pass vars "optional")
-$phtml->render('path/to/file.html', array('var' => 'value'));
+$pxml->render('path/to/file.html', array('var' => 'value'));
 
+?>
 ```
 
 **An PHTML file**
-```php
-    
-    
-    <!-- 
-        PHP HTML MIX
-        The Lightest, why ?
-        As it is only replaces some words with others,
-        and no more REGEXP :-) .
-     -->
-     
+```
     <h1> <print>$c</print> </h1>
     <php> $this->alert = 'hi' </php>
     <print> $this->alert </print>
