@@ -25,7 +25,7 @@ require_once 'path/tp/pxml.php';
 // start it
 $pxml = new pxml;
 
-// ad your own replacements ?
+// add your own replacements ?
 $pxml->add(array(
     '(php):'    =>  ' <?php ',
     ':(php)'    =>  ' ?> '
